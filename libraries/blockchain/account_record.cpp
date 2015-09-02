@@ -194,6 +194,9 @@ namespace bts { namespace blockchain {
 
             if( !record.is_retracted() )
                 db.account_insert_into_vote_set( vote_del( record.net_votes(), id ) );
+            
+            if( !record.is_retracted() )
+                db.account_insert_into_rp_set( rp_index( record.stats_info.rp, id ) );
         }
     } FC_CAPTURE_AND_RETHROW( (id)(record) ) }
 
