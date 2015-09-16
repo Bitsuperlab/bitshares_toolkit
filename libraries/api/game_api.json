@@ -3,7 +3,7 @@
   "methods" : [
       {
           "method_name" : "game_buy_chips",
-          "description" : "Exchange lto for chips",
+          "description" : "Exchange pls for chips",
           "return_type" : "transaction_record",
           "parameters"  : [
           {
